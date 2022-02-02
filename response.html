@@ -11,21 +11,23 @@
         <div style="font-size: 28px; font-weight: bold; letter-spacing: 2px; padding: 20px;">
             THANK YOU!
         </div>
-       <div style="font-size: 20px; font-weight: bold; letter-spacing: 2px; padding: 20px;">
+       <div id="rate" style="font-size: 20px; font-weight: bold; letter-spacing: 2px; padding: 20px;">
             Want to rate our app?
         </div>
     </div>
 
         <script>
-            const thanks = document.querySelector(".thanks")
             if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
                 setTimeout(() => {
                     window.location.href = "https://apps.apple.com/us/app/carla-car-rental-rent-a-car/id1035631234"
                 }, 1000)
-            } else {
+            } else if (/android/i.test(navigator.userAgent)) {
                 setTimeout(() => {
                     window.location.href = "https://play.google.com/store/apps/details?id=com.mobikasaba.carlaandroid&hl=en&gl=US"
                 }, 1000)
+            } else {
+                const rate = document.querySelector("#rate")
+                rate.innerHTML = "Remember to rate our app in your mobile store."
             }
         </script>
 </body>
