@@ -20,11 +20,11 @@
             const thanks = document.querySelector(".thanks")
             if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
                 setTimeout(() => {
-                    window.location.replace("https://apps.apple.com/us/app/carla-car-rental-rent-a-car/id1035631234")
+                    window.location.href = "https://apps.apple.com/us/app/carla-car-rental-rent-a-car/id1035631234"
                 }, 1000)
             } else if (/android/i.test(navigator.userAgent)) {
                 setTimeout(() => {
-                    window.location.replace("https://play.google.com/store/apps/details?id=com.mobikasaba.carlaandroid&hl=en&gl=US")
+                    window.location.href = "https://play.google.com/store/apps/details?id=com.mobikasaba.carlaandroid&hl=en&gl=US"
                 }, 1000)
             }
         </script>
