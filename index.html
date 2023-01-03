@@ -1,36 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Metin DÖKMEN</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css"
+		/>
+		<style>
+			.main-wrapper {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
 
-        div {
-            margin: 10px;
-        }
-    </style>
-</head>
-<body>
-    <div>
-        <p>Bu p taginin icinde backslash'li olan:
-            <a href="\https://rentcarla.com/jumpTo/promotionsWithCode/ONLY4YOU?utm_source=crm&utm_medium=crmemail\"> here </a>
-        </p>
-    </div>
-    <p>Bu da p taginin icinde backslash'siz olan:
-        <a href="https://rentcarla.com/jumpTo/promotionsWithCode/ONLY4YOU?utm_source=crm&utm_medium=crmemail"> here </a>
-    </p>
-    <p>Bu da p taginin disinda backslash'siz olan</p>
-    <a href="https://rentcarla.com/jumpTo/promotionsWithCode/ONLY4YOU?utm_source=crm&utm_medium=crmemail"> here </a>
-    <div>
-        <hr />
-    </div>
-</body>
+			.github-profile-badge {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.github-profile-badge-wrapper {
+				text-decoration: none;
+				display: flex;
+				-webkit-tap-highlight-color: transparent;
+				padding-bottom: 5px;
+				padding-right: 5px;
+				justify-content: center;
+			}
+
+			.github-profile-badge-img-wrapper {
+				position: relative;
+				height: 100px;
+			}
+
+			.github-profile-badge-img {
+				border-radius: 50%;
+				width: 100px;
+				height: 100px;
+			}
+
+			.github-profile-badge-logo {
+				position: absolute;
+				bottom: -10px;
+				right: -10px;
+				width: 40px;
+				height: 40px;
+			}
+
+			.github-profile-badge-name-wrapper {
+				box-sizing: content-box;
+				display: flex;
+				align-items: center;
+				overflow: hidden;
+				background: transparent;
+				align-self: stretch;
+				padding-left: 25px;
+				margin-left: -25px;
+				border-top-right-radius: 25px;
+				border-bottom-right-radius: 25px;
+				width: 0;
+				max-width: 0;
+				transition: all 0.5s ease;
+			}
+
+			.github-profile-badge-name {
+				font-size: 15px;
+				font-family: monospace;
+				color: white;
+				margin: 0;
+				padding: 0;
+				margin-left: 5px;
+				margin-right: 10px;
+			}
+
+			.techs {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+			}
+
+			i {
+				font-size: 32px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main-wrapper">
+			<div>
+				<h1>Metin DÖKMEN</h1>
+			</div>
+
+			<div>
+				<div class="github-profile-badge" data-user="kindmemento">
+					<a
+						href="https://github.com/kindmemento"
+						target="_blank"
+						class="github-profile-badge-wrapper"
+						><div class="github-profile-badge-img-wrapper">
+							<img
+								src="https://avatars.githubusercontent.com/kindmemento"
+								alt="kindmemento GitHub Profile"
+								class="github-profile-badge-img"
+							/><img
+								src="https://github.com/fluidicon.png"
+								alt="GitHub logo"
+								class="github-profile-badge-logo"
+							/>
+						</div>
+						<div
+							class="github-profile-badge-name-wrapper"
+							style="width: 0px; max-width: 0px"
+						>
+							<p class="github-profile-badge-name">\kindmemento</p>
+						</div>
+					</a>
+
+					<div class="techs">
+						<h1>Technologies I Know</h1>
+						<div class="logos">
+							<i class="devicon-javascript-plain"></i>
+							<i title="TypeScript" class="devicon-typescript-plain"></i>
+							<i title="NodeJS" class="devicon-nodejs-plain"></i>
+							<i title="Kotlin" class="devicon-kotlin-plain"></i>
+							<i title="Java" class="devicon-java-plain"></i>
+							<i title="MySQL" class="devicon-mysql-plain"></i>
+							<i title="Redis" class="devicon-redis-plain"></i>
+							<i
+								title="Amazon Web Services"
+								class="devicon-amazonwebservices-original"
+							></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
